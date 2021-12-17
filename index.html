@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter's Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="vote">
+        <h1>Voter's Page</h1>
+        <div class="count">
+            <div class="count-items">
+                <label for="count-congress">Num of Votes for Congress</label>
+                <div id="vote_Congress"></div>
+            </div>
+            <div class="count-items">
+                <label for="count-bjp">Num of Votes for BJP</label>
+                <div id="vote_bjp"></div>
+            </div>
+            <div class="count-items">
+                <label for="count-MNS">Num of Votes for MNS</label>
+                <div id="vote_mns"></div>
+            </div>
+            <div class="count-items">
+                <label>winner is</label>
+                <div id="winner" ></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container-items">
+                <label for="congress">Vote For Congress</label>
+                <button type="submit" onclick="congressVote()">Vote</button>
+            </div>
+            <div class="container-items">
+                <label for="BJP">Vote For BJP</label>
+                <button type="submit" onclick="bjpVote()">Vote</button>
+            </div>
+            <div class="container-items">
+                <label for="MNs">Vote For MNS</label>
+                <button type="submit" onclick="mnsVote()">Vote</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
